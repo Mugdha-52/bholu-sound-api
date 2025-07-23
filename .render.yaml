@@ -4,6 +4,5 @@ services:
     name: bholu-sound-api
     runtime: python
     plan: free
-    buildCommand: ""
+    buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app
-
