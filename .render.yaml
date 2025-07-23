@@ -1,1 +1,9 @@
-"" 
+version: "1"
+services:
+  - type: web
+    name: bholu-sound-api
+    runtime: python
+    plan: free
+    buildCommand: ""
+    startCommand: gunicorn app:app
+
